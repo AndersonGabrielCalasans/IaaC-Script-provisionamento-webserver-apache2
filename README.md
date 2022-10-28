@@ -40,25 +40,29 @@ monitoring --reservation-affinity=any
  6- Copiar os arquivos da aplicação no diretório padrão do apache;
  7- Subir arquivo de script para um repositório no GitHub.
 
- Para os passos anteriores nó criamos um script para execução que se encontra [aqui](). 
+ Para os passos anteriores nó criamos um script para execução que se encontra [aqui](https://github.com/AndersonGabrielCalasans/IaaC-Script-provisionamento-webserver-apache2/blob/main/script-iac-webserver.sh). 
  Para você utilizá-lo para subir sua aplicação, baixa alterar o endereço do diretório do arquivo no script modelo e seguir os passos a seguir:
 
  - Crie uma pasta na raíz com o nome **script**.
- 		´cd /´
- 		´sudo mkdir script´
-
+ 	```
+	cd /
+ 	sudo mkdir script
+	```
  - Entre na pasta criada e crie o script padrão com nome **script-iac-webserver.sh**.
- 		´cd /script´
- 		´sudo nano script-iac-webserver.sh´
-
+ 	```
+	cd /script
+ 	sudo nano script-iac-webserver.sh
+	```
  - Copie o script padrão, altere o endereço da sua aplicação web de acordo com o diretório onde ela se encontra (copie o link.zip), salve o arquivo e feche.
 
  - Conceda ao script **permissão de execução**.
- 		´sudo chmod +x script-iac-webserver.sh´
-
+ 	```
+	sudo chmod +x script-iac-webserver.sh
+	```
  - Execute o script. **Importante:** É recomendável que realize uma snapshot do que realizou até agora por segurança, pois caso tenha errado algum passo você consegue alterar e voltar ao passo anterior.
- 		´sudo ./script-iac-webserver.sh´
-
+ 	```
+	sudo ./script-iac-webserver.sh
+	```
 Tudo certo, agora iremos subir o projeto para um repositório no **GitHub:**
 
 - Verificando se o Git está instalado na VM:
